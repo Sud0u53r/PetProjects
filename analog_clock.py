@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import turtle, time
 
 N = 300
