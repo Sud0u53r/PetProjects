@@ -6,3 +6,4 @@ The python scripts I wrote while learning...
 
 ### 2) [Cartesian & Polar Grapher using Turtle](https://github.com/Sud0-u53r/PythonStuff/blob/master/grapher.py)
 ![Grapher.png](https://raw.githubusercontent.com/Sud0-u53r/PythonStuff/master/imgs/grapher.png)
+![Grapher.png](https://raw.githubusercontent.com/Sud0-u53r/PythonStuff/master/imgs/grapher1.png)
