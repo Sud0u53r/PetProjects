@@ -39,7 +39,7 @@ class BoardPiece {
 	void flagPiece() { // Flagging a box
 		this.isFlagged ^= true; // Toggle isFlagged
 		if (isFlagged) {
-			setImageIcon("assets/bombflagged.png"); // Set icon of button to flag
+			setImageIcon("imgs/assets/bombflagged.png"); // Set icon of button to flag
 			this.btn.setBackground(new Color(192, 192, 192)); // To match the icon background
 			this.G.flags++;
 		} else {
@@ -61,11 +61,11 @@ class BoardPiece {
 		if (value.equals("0")) setImageIcon(null); // If surrounding mines count is 0, remove icon from the button
 		else {
 			if (value.equals("-1")) {
-				if (this.isFlagged) setImageIcon("assets/bombflagged.png"); // Set icon to flag if it's a mine and already flagged
-				else setImageIcon("assets/bombrevealed.png"); // Set icon to mine if it's a mine and not flagged
+				if (this.isFlagged) setImageIcon("imgs/assets/bombflagged.png"); // Set icon to flag if it's a mine and already flagged
+				else setImageIcon("imgs/assets/bombrevealed.png"); // Set icon to mine if it's a mine and not flagged
 			} else {
-				if (this.isFlagged) setImageIcon("assets/bombmisflagged.png"); // Set icon to misflagged mine if it's not a mine but flagged as a mine
-				else setImageIcon("assets/open" + value + ".png"); // Set icon to the number of mines around the box
+				if (this.isFlagged) setImageIcon("imgs/assets/bombmisflagged.png"); // Set icon to misflagged mine if it's not a mine but flagged as a mine
+				else setImageIcon("imgs/assets/open" + value + ".png"); // Set icon to the number of mines around the box
 			}
 		}
 	}
@@ -324,7 +324,7 @@ class Game {
 		if (this.board[posx][posy].value == -1) { // GAMEOVER
 			gameOver(); // Stops the timer and disables all the boxes and reveals the unflagged mines
 			this.board[posx][posy].btn.setBackground(new Color(255, 0, 0));
-			this.board[posx][posy].setImageIcon("assets/bombdeath.png"); // Set triggered mine to different icon
+			this.board[posx][posy].setImageIcon("imgs/assets/bombdeath.png"); // Set triggered mine to different icon
 		}
 	}
 
